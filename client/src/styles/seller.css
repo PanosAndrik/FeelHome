@@ -1,0 +1,23 @@
+.listings-div{
+    display:flex;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap:3em; 
+    background-color: rgba(34, 34, 204, 0.197);
+ 
+}
+
+.create-btn{
+    padding: 10px;
+    background-color: rgba(0, 0, 255, 0.619);
+    color:white;
+    border-radius: 10px;
+}
+
+.my-listings{
+    font-size: 30px;
+
+}

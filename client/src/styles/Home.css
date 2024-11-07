@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0; 
+    
+}
+
+.background-container{
+    background-image: url('../assets/realestate1.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headers{
+    text-align: center;
+    color: white;  
+}
+
+.h1{
+   font-size: 40px;
+   line-height:150px;
+}
+
+.h2{
+    font-size: 30px;
+}
+
+/* Here is the beginning of the styling of the SearchResults.jsx file*/
+.search-results-container {
+    padding: 20px;
+    background-color: rgba(0, 76, 139, 0);
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    color:white;
+    margin: 0 auto;
+    width: 60vw;
+    font-size: 1em;
+    
+  }
+
+  .results-list {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    
+  }
+
+  .search-results-h2{
+    font-size: 20px;
+    padding:20px;
+    
+  }
+  
+  .result-item {
+    background-color: rgba(0, 76, 139, 0.463); 
+    margin-bottom: 15px; 
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .result-item:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .result-title {
+    font-size: 1.6em;
+    color: #333;
+    margin-bottom: 10px;
+    color:white;
+  }
+  
+  .result-description, .result-location, .result-rent, .result-apartment-type {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+    color:white;
+  }
+
+  /* Here is the end of the styling of the SearchResults.jsx file*/

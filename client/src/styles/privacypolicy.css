@@ -1,0 +1,16 @@
+.privacy-container{
+    width: 50%;
+    height:100%;
+    margin: 5em auto;
+}
+
+.p-header{
+    font-weight: bolder;
+    font-size: larger;
+    margin-bottom: 2em;
+    color:rgba(0, 0, 255, 0.715);
+}
+
+.p-paragraph{
+    line-height: 2em;
+}

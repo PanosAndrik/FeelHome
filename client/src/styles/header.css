@@ -1,0 +1,30 @@
+.navbar{
+    display:grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    background-color: rgb(255, 255, 255);
+    padding: 0.6em;
+    border-style: outset;
+    border-bottom:  1px solid #ccc;
+
+}
+
+
+
+.site-title{
+    font-weight: bold;
+}
+
+.register-login{
+    display: flex;
+    justify-content: space-between;
+    gap:0.2em;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    font-weight: bold;
+    width: 20vw;
+}
+
+.site-title:hover, li:hover{
+    
+    color: blue;
+}
