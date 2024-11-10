@@ -11,13 +11,13 @@ const app = express();
 const PORT = process.env.PORT || 4040;
 
 //------------------middleware-----------------------------------
-// Updated CORS configuration
 app.use(cors({
   origin: [
-    'http://localhost:5173', 
-    'http://localhost:3000',  
-    'https://feelhome.netlify.app/'  
+    'http://localhost:5173',
+    'https://feelhome.netlify.app'  // Your actual Netlify domain
   ],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true
 }));
 
