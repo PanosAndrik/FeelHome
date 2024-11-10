@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import "../styles/newlisting.css"
+import { API_URL } from "../utils/api";
 
 const newlisting = () => {
   
@@ -77,7 +78,7 @@ const newlisting = () => {
     }
 
     try {
-      const response = await axios.delete(`http://localhost:4040/listings/delete/${listingId}`, {
+      const response = await axios.delete(`${API_URL}/listings/delete/${listingId}`, {
         headers: {
           'Authorization': `Bearer ${token}`,
         },
@@ -122,7 +123,7 @@ const newlisting = () => {
       });
 
       const response = await axios.post(
-        'http://localhost:4040/listings/create',
+        `${API_URL}/listings/create`,
         form,
         {
           headers: {

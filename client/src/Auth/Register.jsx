@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { TextField, Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import { API_URL } from "../utils/api";
 
 const Register = () => {
   const [fullName, setFullName] = useState("");
@@ -11,7 +12,7 @@ const Register = () => {
 
   const handleRegister = async () => {
     try {
-      await axios.post("http://localhost:4040/auth/register", {
+      await axios.post(`${API_URL}/auth/register`, {
         fullName,
         email,
         password
