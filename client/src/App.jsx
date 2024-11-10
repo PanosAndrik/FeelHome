@@ -4,7 +4,7 @@ import Register from "./Auth/Register.jsx";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
-import Seller from "./pages/seller";
+import Seller from "./pages/Seller.jsx";
 import Searchbar from "./components/Shared/Searchbar.jsx";
 import Header from "./components/Shared/Header.jsx";
 import Footer from "./components/Shared/Footer.jsx";
