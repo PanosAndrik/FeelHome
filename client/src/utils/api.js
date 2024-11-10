@@ -1,7 +1,14 @@
-const cleanUrl = (url) => url.replace(/([^:]\/)\/+/g, "$1"); 
 
-export const API_URL = cleanUrl(import.meta.env.VITE_API_URL || 'http://localhost:4040');
+const cleanUrl = (url) => {
+    if (!url) return '';
+    return url.replace(/\/+$/, '');
+  };
+  
 
+  export const API_URL = cleanUrl(import.meta.env.VITE_API_URL) || 'http://localhost:4040';
+  
 
-export const apiCall = (endpoint) => {
-  return `${API_URL}/${endpoint.replace(/^\/+/, '')}`; /
+  export const apiCall = (endpoint) => {
+    const cleanEndpoint = endpoint.replace(/^\/+/, '');
+    return `${API_URL}/${cleanEndpoint}`;
+  };
